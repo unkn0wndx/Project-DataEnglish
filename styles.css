@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+/*Start Styles for Cours Cards*/
+.hoverCourse:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.linkCourse:link, .linkCourse:visited, .linkCourse:active {
+    text-decoration:none;
+    color: #000000;
+}
+/*End Styles for Cours Cards*/
