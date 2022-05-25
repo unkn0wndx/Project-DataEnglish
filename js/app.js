@@ -87,16 +87,17 @@ const listCourses = async () => {
 
     let tableBody = ``;
     data.forEach((course) => {
-            tableBody += `<div class="col hoverCourse">
-                <div class="card h-100">
-                <a href="./courses/verbs.html" class="linkCourse">
-                    <div class="card-body">
-                        <h5>${course.id + '. ' + course.name}</h5>
-                        <p>${course.description}</p>
-                    </div>
-                </div>
-                </a>
-            </div> `;
+            tableBody +=
+                `<div class="col hoverCourse">
+                    <a href="${course.url}" class="linkCourse">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5>${course.id + '. ' + course.name}</h5>
+                                <p>${course.description}</p>
+                            </div>
+                        </div>
+                    </a>
+                </div> `;
     });
     tableBody_Users.innerHTML = tableBody;
 };
@@ -104,3 +105,5 @@ const listCourses = async () => {
 window.addEventListener("load", function () {
     listCourses();
 });
+
+

@@ -3,18 +3,6 @@
     "id": 1,
     "name": "Verbs",
     "description": "Irregular, Regular, Infinitive, Past, Past Participle, Gerund and Meaning.",
-    "url": ""
-    },
-  {
-    "id": 2,
-    "name": "Ejemplo",
-    "description": "Ejemplo",
-    "url": ""
-  },
-  {
-    "id": 3,
-    "name": "Ejemplo",
-    "description": "Ejemplo",
-    "url": ""
-  }
+    "url": "./courses/verbs.html"
+    }
 ]
