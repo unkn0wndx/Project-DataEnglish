@@ -1,0 +1,11 @@
+########################## v0.02 ##########################
+Agregue:
+- Login Page
+- Drobdown en el navbar
+
+Modifique:
+- Estilo de las cards
+- Select de verbs.html por un button group
+- Agregue <hr> como divisores en verbs.html
+###########################################################
+

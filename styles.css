@@ -10,7 +10,6 @@ body {
 
 .linkCourse:link, .linkCourse:visited, .linkCourse:active {
     text-decoration:none;
-    color: #000000;
 }
 /*End Styles for Cards*/
 
@@ -22,10 +21,36 @@ body {
 }
 
 /*Iconos Google*/
- .material-symbols-outlined {
-     font-variation-settings:
-             'FILL' 0,
-             'wght' 400,
-             'GRAD' 0,
-             'opsz' 48
- }
+.material-symbols-outlined {
+    font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 48
+}
+
+/* Star Login Form and html */
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+    padding-top: 150px;
+}
+
+.form-signin .form-floating:focus-within {
+    z-index: 2;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+/* End Login Form and html */
+
+

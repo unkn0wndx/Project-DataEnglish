@@ -22,7 +22,9 @@
           "abiding",
           "/",
           "/"
-        ]
+        ],
+        "regular": "No",
+        "irregular": "Sí"
       },
       "pVerb": "Sí",
       "cNoun": "Sí",

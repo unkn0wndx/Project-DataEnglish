@@ -88,20 +88,81 @@ const listCards = async () => {
 
     let tableBody = ``;
     data.forEach((cards) => {
-            tableBody +=
-                `<div class="col hoverCourse">
-                    <a href="${cards.url}" class="linkCourse">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h5>${cards.id + '. ' + cards.name}</h5>
-                                <p>${cards.description}</p>
-                            </div>
-                        </div>
-                    </a>
-                </div> `;
+        tableBody +=
+            `<div class="col hoverCourse">
+                <a href="${cards.url}" class="linkCourse">
+                <div class="card mb-3" style="max-width: 18rem;">
+                    <h5 class="card-header text-bg-dark">${cards.name}</h5>
+                    <div class="card-body text-bg-light">
+                      <p class="card-text">${cards.description}</p>
+                    </div>
+                  </div>
+                </a>
+            </div> `;
     });
     cardsList.innerHTML = tableBody;
 };
+
+
+const listVerbsAll = async () => {
+
+    const response = await fetch("../json/words.json");
+    const data = await response.json();
+
+    let tableBody = ``;
+    data.forEach((word) => {
+        tableBody +=
+            `<tr>
+                <td>${word.word.verb.present[0]}</td>
+            </tr>`;
+    });
+    contenido.innerHTML = tableBody;
+};
+
+const listVerbsRe = async () => {
+
+    const response = await fetch("../json/words.json");
+    const data = await response.json();
+
+    let tableBody = ``;
+    data.forEach((word) => {
+        if (word.word.verb.regular === "Sí") {
+            tableBody +=
+                `<tr>
+            <td>Regular</td>
+        </tr>`;
+        } else {
+            tableBody +=
+                `<tr>
+            <td>Sin Datos</td>
+        </tr>`;
+        }
+    });
+    contenido.innerHTML = tableBody;
+};
+
+const listVerbsIrre = async () => {
+
+    const response = await fetch("../json/words.json");
+    const data = await response.json();
+
+    let tableBody = ``;
+    data.forEach((word) => {
+        if (word.word.verb.irregular === "Sí") {
+            tableBody +=
+                `<tr>
+            <td>${word.word.verb.present[0]}</td>
+        </tr>`;
+        } else {
+            tableBody +=
+                `<tr>
+            <td>Sin Datos</td>
+        </tr>`;
+        }
+    });
+    contenido.innerHTML = tableBody;
+};
+
 
 window.addEventListener("load", function () {
     listCards();
