@@ -79,32 +79,21 @@ window.addEventListener("load", function () {
 });*/
 
 
-//Script Cards
+//verbsList
 
-const listCards = async () => {
+const verbsList1 = async () => {
 
-    const response = await fetch("./json/cards.json");
-    const data = await response.json();
+    const response2 = await fetch("./json/words.json");
+    const data2 = await response2.json();
 
-    let tableBody = ``;
-    data.forEach((cards) => {
-            tableBody +=
-                `<div class="col hoverCourse">
-                    <a href="${cards.url}" class="linkCourse">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h5>${cards.id + '. ' + cards.name}</h5>
-                                <p>${cards.description}</p>
-                            </div>
-                        </div>
-                    </a>
-                </div> `;
+    let tableBody2 = ``;
+    data2.forEach((verbs) => {
+        tableBody2 +=
+            `<tr><td>hola</td></tr>`;
     });
-    cardsList.innerHTML = tableBody;
+    verbsList.innerHTML = tableBody2;
 };
 
 window.addEventListener("load", function () {
-    listCards();
+    verbsList1();
 });
-
-

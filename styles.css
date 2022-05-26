@@ -2,7 +2,7 @@ body {
     font-family: 'Ubuntu Mono', monospace;
 }
 
-/*Start Styles for Cours Cards*/
+/*Start Styles for Cards*/
 .hoverCourse:hover{
     transform: translateY(-5px);
     cursor: pointer;
@@ -12,7 +12,7 @@ body {
     text-decoration:none;
     color: #000000;
 }
-/*End Styles for Cours Cards*/
+/*End Styles for Cards*/
 
 /*Bordes de Tabla Verbs*/
 .borderTable{

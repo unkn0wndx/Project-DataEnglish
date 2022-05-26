@@ -1,0 +1,40 @@
+[
+  {
+    "id": 1,
+    "word": {
+      "verb": {
+        "present": [
+          "abide",
+          "abáid",
+          "soportar, tolerar"
+        ],
+        "past": [
+          "abode",
+          "abóud",
+          "/"
+        ],
+        "pastP": [
+          "abided",
+          "/",
+          "/"
+        ],
+        "gerund": [
+          "abiding",
+          "/",
+          "/"
+        ]
+      },
+      "pVerb": "Sí",
+      "cNoun": "Sí",
+      "worksWith": {
+        "ifinitive": "Sí",
+        "verbIng": "/"
+      },
+      "worksWithN": {
+        "noun": "No",
+        "ajetive": "No",
+        "adverb": "No"
+      }
+    }
+  }
+]
