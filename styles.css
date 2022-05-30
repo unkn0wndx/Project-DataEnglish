@@ -2,12 +2,14 @@ body {
     font-family: 'Ubuntu Mono', monospace;
 }
 
-/*Start Styles for Cards*/
-.hoverCourse:hover{
-    transform: translateY(-5px);
+/* Star Estilos Reutilizables */
+.hoverTransition:hover{
+    transform: scale(1.03);
     cursor: pointer;
 }
+/* End Estilos Reutilizables */
 
+/*Start Styles for Cards*/
 .linkCourse:link, .linkCourse:visited, .linkCourse:active {
     text-decoration:none;
 }
@@ -29,28 +31,7 @@ body {
             'opsz' 48
 }
 
-/* Star Login Form and html */
-.form-signin {
-    max-width: 330px;
-    padding: 15px;
-    padding-top: 150px;
-}
-
-.form-signin .form-floating:focus-within {
-    z-index: 2;
-}
-
-.form-signin input[type="email"] {
-    margin-bottom: -1px;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-}
-
-.form-signin input[type="password"] {
-    margin-bottom: 10px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-}
-/* End Login Form and html */
+/* Star Verbs.html */
+/* End Verbs.html */
 
 

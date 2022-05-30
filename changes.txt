@@ -1,11 +1,24 @@
 ########################## v0.02 ##########################
 Agregue:
 - Login Page
-- Drobdown en el navbar
+- Dropdown en el navbar
 
 Modifique:
 - Estilo de las cards
 - Select de verbs.html por un button group
 - Agregue <hr> como divisores en verbs.html
+###########################################################
+
+########################## v0.03 ##########################
+Agregue:
+- test page
+- elementos en el navbar, estilos e iconos
+
+Elimine:
+- boton de login de la navbar
+
+Modifique:
+- el nombre de login.html, ahora se llama test.html
+- words.json con fines de testeo
 ###########################################################
 

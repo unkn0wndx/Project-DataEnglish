@@ -1,99 +1,175 @@
-/*const listUsers = async () => {
-   const response = await fetch("./js/users.json");
-   const users = await response.json();
+function table() {
+    $(document).ready(function () {
+        $('#verbsTable').DataTable({
+            language: {
+                processing: "Tratamiento en curso...",
+                search: "&nbsp;", //Buscar&nbsp;:
+                lengthMenu: "Verbos por página: _MENU_",
+                info: "No. Verbs: _TOTAL_", //_START_ al _END_ de _TOTAL_
+                infoEmpty: "No. Verbs: _TOTAL_",
+                infoFiltered: " ", //(filtrado de _MAX_ elementos en total)
+                infoPostFix: "",
+                loadingRecords: "Cargando...",
+                zeroRecords: "No se encontraron datos con tu busqueda",
+                emptyTable: "Seleciona o busca que tipo de verbo necesitas. ",
+                paginate: {
+                    first: "Primero",
+                    previous: "<",
+                    next: ">",
+                    last: "Ultimo"
+                },
+                aria: {
+                    sortAscending: ": active para ordenar la columna en orden ascendente",
+                    sortDescending: ": active para ordenar la columna en orden descendente"
+                }
+            },
+            lengthMenu: [[15, 10], [15, 10]],
+        });
+    });
+}
 
-   let tableBody = ``;
-   users.forEach((user, index) => {
-       tableBody += `<tr>
-       <td class='centered'>${user.id}</td>
-       <td class='centered'>${user.name}</td>
-       <td class='centered'>${user.username}</td>
-       <td class='centered'>${user.email}</td>
-       <td class='centered'>${user.website}</td>
-       </tr>`;
-   });
-   // document.getElementById("tableBody_Users").innerHTML = tableBody;
-   tableBody_Users.innerHTML = tableBody;
-};
-
-window.addEventListener("load", function () {
-   listUsers();
-});
-// */
-
-// const listUsers = async () => {
-//     const response = await fetch("./json/cards.json");
-//     const users = await response.json();
-
-//     let tableBody = ``;
-//     users.forEach((user) => {
-//         tableBody += `<div class="col">
-//         <div class="card h-100">
-//           <div class="card-body">
-//             <h5 class="card-title">${user.id}</h5>
-//             <h6 class="card-subtitle mb-2 text-muted">${user.name}</h6>
-//             <p class="card-text">${user.email}</p>
-//             <a href="${user.website}" class="btn btn-primary">Go somewhere</a>
-//           </div>
-//         </div>
-//       </div>`;
-//     });
-//     // document.getElementById("tableBody_Users").innerHTML = tableBody;
-//     tableBody_Users.innerHTML = tableBody;
-// };
-
-// window.addEventListener("load", function () {
-//     listUsers();
-// });
-/*
+//Script Cards
 
 
-const listUsers = async () => {
+
+const listCards = async () => {
+
     const response = await fetch("./json/cards.json");
     const data = await response.json();
 
     let tableBody = ``;
-    data.forEach((course) => {
-
-        if (course.address.street === "Victor Plains") {
-
-            tableBody += `<div class="col">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">${course.id}</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">${course.name}</h6>
-                        <p class="card-text">${course.email}</p>
-                        <a href="${course.website}" class="btn btn-primary">Clic here</a>
+    data.forEach((cards) => {
+        tableBody +=
+            `<div class="col hoverCourse">
+                <a href="${cards.url}" class="linkCourse">
+                <div class="card mb-3" style="max-width: 18rem;">
+                    <h5 class="card-header text-bg-dark">${cards.name}</h5>
+                    <div class="card-body text-bg-light">
+                      <p class="card-text">${cards.description}</p>
                     </div>
-                </div>
-            </div>`;
+                  </div>
+                </a>
+            </div> `;
+    });
+    cardsList.innerHTML = tableBody;
+};
+
+var TableTest = '<table id="verbsTable" class="table table-bordered table-hover"> <thead class="table-dark"> <tr> <th>Name</th>  </tr> </thead> <tbody id="contenido"> </tbody> </table>';
+
+const listVerbsAll = async () => {
+
+    const response = await fetch("./json/words.json");
+    const data = await response.json();
+
+    prueba.innerHTML = TableTest;
+
+    let tableBody = ``;
+    data.forEach((word) => {
+        tableBody +=
+            `<tr>
+                <td class="hoverTransition" onclick="testT(test = ${word.id})">${word.test}
+                </td>  
+            </tr>`;
+    });
+    contenido.innerHTML = tableBody;
+
+    table();
+};
+
+
+
+
+const listVerbsRe = async () => {
+
+    const response = await fetch("./json/words.json");
+    const data = await response.json();
+
+    prueba.innerHTML = TableTest;
+
+    let tableBody = ``;
+    data.forEach((word) => {
+        if (word.word === "Regular") {
+            tableBody +=
+                `<tr>
+                <td class="hoverTransition" onclick="testT(test = ${word.id})">${word.test}
+                </td>  
+            </tr>`;
         }
-
-
     });
-    tableBody_Users.innerHTML = tableBody;
+    contenido.innerHTML = tableBody;
+
+    table();
+
 };
 
-window.addEventListener("load", function () {
-    listUsers();
-});*/
+const listVerbsIrre = async () => {
 
+    const response = await fetch("./json/words.json");
+    const data = await response.json();
 
-//verbsList
+    prueba.innerHTML = TableTest;
 
-const verbsList1 = async () => {
-
-    const response2 = await fetch("./json/words.json");
-    const data2 = await response2.json();
-
-    let tableBody2 = ``;
-    data2.forEach((verbs) => {
-        tableBody2 +=
-            `<tr><td>hola</td></tr>`;
+    let tableBody = ``;
+    data.forEach((word) => {
+        if (word.word === "Irregular") {
+            tableBody +=
+                `<tr>
+                <td class="hoverTransition" onclick="testT(test = ${word.id})">${word.test}
+                </td>  
+            </tr>`;
+        }
     });
-    verbsList.innerHTML = tableBody2;
+    contenido.innerHTML = tableBody;
+
+    table();
 };
 
+
 window.addEventListener("load", function () {
-    verbsList1();
+    listCards();
 });
+
+
+
+const testT = async (test) => {
+
+    const response = await fetch("./json/words.json");
+    const data = await response.json();
+
+    let tableBody = ``;
+    let seUsaEn = '';
+    let InfinitiveC = ``; 
+    let pastC = ``;
+    let pastParticipleC = ``;
+    let verbIngC = ``;
+    data.forEach((word) => {
+
+        if (test === word.id) {
+            tableBody +=
+                `<tr><td>${word.test}</td><td>${word.test}</td></tr>`;
+            InfinitiveC +=
+                `<li class="list-group-item fw-bold">Verbo: <span class="fw-lighter">${word.test}</span></li>
+                <li class="list-group-item fw-bold">Pronunciación: <span class="fw-lighter">${word.id}</span></li>
+                <li class="list-group-item fw-bold">Significado: <span class="fw-lighter">${word.test}</span></li>`;
+            pastC +=
+                `<li class="list-group-item fw-bold">Verbo: <span class="fw-lighter">${word.test}</span></li>
+                <li class="list-group-item fw-bold">Pronunciación: <span class="fw-lighter">${word.id}</span></li>
+                <li class="list-group-item fw-bold">Significado: <span class="fw-lighter">${word.test}</span></li>`;
+            pastParticipleC +=
+                `<li class="list-group-item fw-bold">Verbo: <span class="fw-lighter">${word.test}</span></li>
+                <li class="list-group-item fw-bold">Pronunciación: <span class="fw-lighter">${word.id}</span></li>
+                <li class="list-group-item fw-bold">Significado: <span class="fw-lighter">${word.test}</span></li>`;
+            verbIngC +=
+                `<li class="list-group-item fw-bold">Verbo: <span class="fw-lighter">${word.test}</span></li>
+                <li class="list-group-item fw-bold">Pronunciación: <span class="fw-lighter">${word.id}</span></li>
+                <li class="list-group-item fw-bold">Significado: <span class="fw-lighter">${word.test}</span></li>`;
+            seUsaEn += `${word.test2}`; 
+        }
+    });
+    verbInfinitive.innerHTML = InfinitiveC;
+    testIcon.innerHTML = seUsaEn;
+    verbPast.innerHTML = pastC;
+    verbPastParticiple.innerHTML = pastParticipleC;
+    verbIng.innerHTML = verbIngC;
+    testContenido.innerHTML = tableBody;
+}

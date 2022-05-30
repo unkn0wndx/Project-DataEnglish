@@ -1,42 +1,63 @@
 [
   {
     "id": 1,
-    "word": {
-      "verb": {
-        "present": [
-          "abide",
-          "abáid",
-          "soportar, tolerar"
-        ],
-        "past": [
-          "abode",
-          "abóud",
-          "/"
-        ],
-        "pastP": [
-          "abided",
-          "/",
-          "/"
-        ],
-        "gerund": [
-          "abiding",
-          "/",
-          "/"
-        ],
-        "regular": "No",
-        "irregular": "Sí"
-      },
-      "pVerb": "Sí",
-      "cNoun": "Sí",
-      "worksWith": {
-        "ifinitive": "Sí",
-        "verbIng": "/"
-      },
-      "worksWithN": {
-        "noun": "No",
-        "ajetive": "No",
-        "adverb": "No"
-      }
-    }
+    "word": "Irregular",
+    "test": "run"
+  },{
+    "id": 2,
+    "word": "Irregular",
+    "test": "be"
+  },{
+    "id": 3,
+    "word": "Regular",
+    "test": "awake"
+  },{
+    "id": 4,
+    "word": "Irregular",
+    "test": "bet"
+  },{
+    "id": 5,
+    "word": "Regular",
+    "test": "bend"
+  },{
+    "id": 6,
+    "word": "Irregular",
+    "test": "bite"
+  },{
+    "id": 7,
+    "word": "Irregular",
+    "test": "drive"
+  },{
+    "id": 8,
+    "word": "Regular",
+    "test": "fall"
+  },{
+    "id": 9,
+    "word": "Irregular",
+    "test": "fly"
+  },{
+    "id": 10,
+    "word": "Regular",
+    "test": "flee"
+  },{
+    "id": 11,
+    "word": "Irregular",
+    "test": "go"
+  },{
+    "id": 12,
+    "word": "Regular",
+    "test": "fall"
+  },{
+    "id": 13,
+    "word": "Irregular",
+    "test": "fly"
+  },{
+    "id": 14,
+    "word": "Regular",
+    "test": "flee"
+  },{
+    "id": 15,
+    "word": "Irregular",
+    "test": "go"
   }
 ]
