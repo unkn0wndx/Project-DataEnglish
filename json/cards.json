@@ -4,5 +4,20 @@
     "name": "Verbs",
     "description": "Irregular, Regular, Infinitive, Past, Past Participle, Verb+ing and Extra information",
     "url": "./cards/verbs.html"
+  },{
+    "id": 2,
+    "name": "Preposiciones",
+    "description": "En Desarrollo",
+    "url": "#"
+  },{
+    "id": 3,
+    "name": "Tiempos verbales",
+    "description": "En Desarrollo",
+    "url": "#"
+  },{
+    "id": 4,
+    "name": "Phrasal verbs - Compound nouns",
+    "description": "En Desarrollo",
+    "url": "#"
   }
 ]

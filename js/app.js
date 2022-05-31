@@ -40,7 +40,7 @@ const listCards = async () => {
     let tableBody = ``;
     data.forEach((cards) => {
         tableBody +=
-            `<div class="col hoverCourse">
+            `<div class="col hoverTransition">
                 <a href="${cards.url}" class="linkCourse">
                 <div class="card mb-3" style="max-width: 18rem;">
                     <h5 class="card-header text-bg-dark">${cards.name}</h5>
@@ -157,9 +157,9 @@ const testT = async (test) => {
                 tagsC +=  `<span class="badge text-bg-secondary">Regular</span>`;
             }
             if(dataC.word.verb.british == true){
-                tagsC +=  `&nbsp<span class="badge text-bg-secondary">British verb</span>`;
+                tagsC +=  `&nbsp<span class="badge text-bg-primary">British verb</span>`;
             }else if(dataC.word.verb.american == true){
-                tagsC +=  `&nbsp<span class="badge text-bg-secondary">American verb</span>`;
+                tagsC +=  `&nbsp<span class="badge text-bg-danger">American verb</span>`;
             }else{
                 tagsC +=  `&nbsp<span class="badge text-bg-secondary">British/American verb</span>`;
             }

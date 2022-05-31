@@ -5,7 +5,6 @@ body {
 /* Star Estilos Reutilizables */
 .hoverTransition:hover{
     transform: scale(1.03);
-    cursor: pointer;
 }
 /* End Estilos Reutilizables */
 
