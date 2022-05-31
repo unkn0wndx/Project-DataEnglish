@@ -25,9 +25,6 @@ Modifique:
 ########################## v0.04 ##########################
 Agregue:
 - cambios de test.html a verbs.html
-
-Elimine:
-
 Modifique:
 - Corregi erro en la ruta de test de verbs.html
 ###########################################################
@@ -36,9 +33,12 @@ Modifique:
 Agregue:
 - estilos y un nuevo diseño al index.html
 
-Elimine:
-
 Modifique:
 - Clos estilos de las etiquetas del verbs.html
+###########################################################
+
+########################## v0.04.2 ##########################
+Modifique:
+- las rutas de los scrips index.html and cards.html
 ###########################################################
 
