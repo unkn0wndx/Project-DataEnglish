@@ -34,7 +34,7 @@ function table() {
 
 const listCards = async () => {
 
-    const response = await fetch("../json/cards.json");
+    const response = await fetch("./json/cards.json");
     const data = await response.json();
 
     let tableBody = ``;
