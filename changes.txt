@@ -22,3 +22,13 @@ Modifique:
 - words.json con fines de testeo
 ###########################################################
 
+########################## v0.04 ##########################
+Agregue:
+- cambios de test.html a verbs.html
+
+Elimine:
+
+Modifique:
+- Corregi erro en la ruta de test de verbs.html
+###########################################################
+

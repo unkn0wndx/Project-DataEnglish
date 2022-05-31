@@ -1,63 +1,627 @@
 [
   {
     "id": 1,
-    "word": "Irregular",
-    "test": "run"
+    "word": {
+      "verb": {
+        "verb": "arise",
+        "irregular": true,
+        "regular": false,
+        "british": false,
+        "american": false,
+        "meaning": "levantar, surgir",
+        "infinitive":{
+          "verb": "arise",
+          "pronunciation": "aráis"
+        },
+        "past":{
+          "verb": "arose",
+          "pronunciation": "aróus"
+        },
+        "pastParticiple":{
+          "verb": "arisen",
+          "pronunciation": "arísen"
+        },
+        "verbIng":{
+          "verb": "arising",
+          "pronunciation": "Sin Datos"
+        }
+      },
+      "pharsalVerb": "Sin Datos",
+      "compoundNoun": "Sin Datos",
+      "gerundVsIng":{
+        "infinitive": "Sin Datos",
+        "gerund": "Sin Datos"
+      },
+      "mode":{
+        "noun": "Sin Datos",
+        "adjetive": "Sin Datos",
+        "adverb": "Sin Datos"
+      }
+    }
   },{
     "id": 2,
-    "word": "Irregular",
-    "test": "be"
+    "word": {
+      "verb": {
+        "verb": "quit",
+        "irregular": false,
+        "regular": true,
+        "british": true,
+        "american": false,
+        "meaning": "dejar",
+        "infinitive":{
+          "verb": "quit",
+          "pronunciation": "Sin Datos"
+        },
+        "past":{
+          "verb": "quitted",
+          "pronunciation": "Sin Datos"
+        },
+        "pastParticiple":{
+          "verb": "quitted",
+          "pronunciation": "Sin Datos"
+        },
+        "verbIng":{
+          "verb": "Sin Datos",
+          "pronunciation": "Sin Datos"
+        }
+      },
+      "pharsalVerb": "Sin Datos",
+      "compoundNoun": "Sin Datos",
+      "gerundVsIng":{
+        "infinitive": "Sin Datos",
+        "gerund": "Sin Datos"
+      },
+      "mode":{
+        "noun": "Sin Datos",
+        "adjetive": "Sin Datos",
+        "adverb": "Sin Datos"
+      }
+    }
   },{
     "id": 3,
-    "word": "Regular",
-    "test": "awake"
+    "word": {
+      "verb": {
+        "verb": "quit",
+        "irregular": true,
+        "regular": false,
+        "british": false,
+        "american": true,
+        "meaning": "dejar",
+        "infinitive":{
+          "verb": "quit",
+          "pronunciation": "Sin Datos"
+        },
+        "past":{
+          "verb": "quit",
+          "pronunciation": "Sin Datos"
+        },
+        "pastParticiple":{
+          "verb": "quit",
+          "pronunciation": "Sin Datos"
+        },
+        "verbIng":{
+          "verb": "Sin Datos",
+          "pronunciation": "Sin Datos"
+        }
+      },
+      "pharsalVerb": "Sin Datos",
+      "compoundNoun": "Sin Datos",
+      "gerundVsIng":{
+        "infinitive": "Sin Datos",
+        "gerund": "Sin Datos"
+      },
+      "mode":{
+        "noun": "Sin Datos",
+        "adjetive": "Sin Datos",
+        "adverb": "Sin Datos"
+      }
+    }
   },{
     "id": 4,
-    "word": "Irregular",
-    "test": "bet"
+    "word": {
+      "verb": {
+        "verb": "awake",
+        "irregular": true,
+        "regular": false,
+        "british": false,
+        "american": false,
+        "meaning": "despertarse, despertar",
+        "infinitive":{
+          "verb": "awake",
+          "pronunciation": "awéik"
+        },
+        "past":{
+          "verb": "awoke",
+          "pronunciation": "awóuk"
+        },
+        "pastParticiple":{
+          "verb": "awoken",
+          "pronunciation": "awóuken"
+        },
+        "verbIng":{
+          "verb": "awaking",
+          "pronunciation": "Sin Datos"
+        }
+      },
+      "pharsalVerb": "Sin Datos",
+      "compoundNoun": "Sin Datos",
+      "gerundVsIng":{
+        "infinitive": "Sin Datos",
+        "gerund": "Sin Datos"
+      },
+      "mode":{
+        "noun": "Sin Datos",
+        "adjetive": "Sí",
+        "adverb": "Sin Datos"
+      }
+    }
   },{
     "id": 5,
-    "word": "Regular",
-    "test": "bend"
+    "word": {
+      "verb": {
+        "verb": "be",
+        "irregular": true,
+        "regular": false,
+        "british": false,
+        "american": false,
+        "meaning": "ser, estar",
+        "infinitive":{
+          "verb": "be",
+          "pronunciation": "Sin Datos"
+        },
+        "past":{
+          "verb": "was/were",
+          "pronunciation": "Sin Datos"
+        },
+        "pastParticiple":{
+          "verb": "been",
+          "pronunciation": "Sin Datos"
+        },
+        "verbIng":{
+          "verb": "being",
+          "pronunciation": "Sin Datos"
+        }
+      },
+      "pharsalVerb": "Sin Datos",
+      "compoundNoun": "Sin Datos",
+      "gerundVsIng":{
+        "infinitive": "Sin Datos",
+        "gerund": "Sin Datos"
+      },
+      "mode":{
+        "noun": "Sin Datos",
+        "adjetive": "Sin Datos",
+        "adverb": "Sin Datos"
+      }
+    }
   },{
     "id": 6,
-    "word": "Irregular",
-    "test": "bite"
+    "word": {
+      "verb": {
+        "verb": "bear",
+        "irregular": true,
+        "regular": false,
+        "british": false,
+        "american": false,
+        "meaning": "aguantar, soportar, parir",
+        "infinitive":{
+          "verb": "bear",
+          "pronunciation": "ber"
+        },
+        "past":{
+          "verb": "bore",
+          "pronunciation": "bor"
+        },
+        "pastParticiple":{
+          "verb": "born",
+          "pronunciation": "born"
+        },
+        "verbIng":{
+          "verb": "bearing",
+          "pronunciation": "Sin Datos"
+        }
+      },
+      "pharsalVerb": "Sin Datos",
+      "compoundNoun": "Sin Datos",
+      "gerundVsIng":{
+        "infinitive": "Sin Datos",
+        "gerund": "Sin Datos"
+      },
+      "mode":{
+        "noun": "Sí",
+        "adjetive": "Sin Datos",
+        "adverb": "Sin Datos"
+      }
+    }
   },{
     "id": 7,
-    "word": "Irregular",
-    "test": "drive"
+    "word": {
+      "verb": {
+        "verb": "beat",
+        "irregular": true,
+        "regular": false,
+        "british": false,
+        "american": false,
+        "meaning": "golpear, derrotar, batir",
+        "infinitive":{
+          "verb": "beat",
+          "pronunciation": "Sin Datos"
+        },
+        "past":{
+          "verb": "beat",
+          "pronunciation": "Sin Datos"
+        },
+        "pastParticiple":{
+          "verb": "beaten",
+          "pronunciation": "Sin Datos"
+        },
+        "verbIng":{
+          "verb": "beating",
+          "pronunciation": "Sin Datos"
+        }
+      },
+      "pharsalVerb": "Sin Datos",
+      "compoundNoun": "Sin Datos",
+      "gerundVsIng":{
+        "infinitive": "Sin Datos",
+        "gerund": "Sin Datos"
+      },
+      "mode":{
+        "noun": "Sí",
+        "adjetive": "Sin Datos",
+        "adverb": "Sin Datos"
+      }
+    }
   },{
     "id": 8,
-    "word": "Regular",
-    "test": "fall"
+    "word": {
+      "verb": {
+        "verb": "become",
+        "irregular": true,
+        "regular": false,
+        "british": false,
+        "american": false,
+        "meaning": "convertirse en, llegar a ser, volverse, ponerse",
+        "infinitive":{
+          "verb": "become",
+          "pronunciation": "bikám"
+        },
+        "past":{
+          "verb": "became",
+          "pronunciation": "bikéim"
+        },
+        "pastParticiple":{
+          "verb": "become",
+          "pronunciation": "bikám"
+        },
+        "verbIng":{
+          "verb": "becoming",
+          "pronunciation": "Sin Datos"
+        }
+      },
+      "pharsalVerb": "Sin Datos",
+      "compoundNoun": "Sin Datos",
+      "gerundVsIng":{
+        "infinitive": "Sin Datos",
+        "gerund": "Sin Datos"
+      },
+      "mode":{
+        "noun": "Sin Datos",
+        "adjetive": "Sin Datos",
+        "adverb": "Sin Datos"
+      }
+    }
   },{
     "id": 9,
-    "word": "Irregular",
-    "test": "fly"
+    "word": {
+      "verb": {
+        "verb": "begin",
+        "irregular": true,
+        "regular": false,
+        "british": false,
+        "american": false,
+        "meaning": "empezar",
+        "infinitive":{
+          "verb": "begin",
+          "pronunciation": "biguin"
+        },
+        "past":{
+          "verb": "began",
+          "pronunciation": "bigáan"
+        },
+        "pastParticiple":{
+          "verb": "begun",
+          "pronunciation": "bigán"
+        },
+        "verbIng":{
+          "verb": "beginning",
+          "pronunciation": "Sin Datos"
+        }
+      },
+      "pharsalVerb": "Sin Datos",
+      "compoundNoun": "Sin Datos",
+      "gerundVsIng":{
+        "infinitive": "Sin Datos",
+        "gerund": "Sin Datos"
+      },
+      "mode":{
+        "noun": "Sin Datos",
+        "adjetive": "Sin Datos",
+        "adverb": "Sin Datos"
+      }
+    }
   },{
     "id": 10,
-    "word": "Regular",
-    "test": "flee"
+    "word": {
+      "verb": {
+        "verb": "bend",
+        "irregular": true,
+        "regular": false,
+        "british": false,
+        "american": false,
+        "meaning": "doblar, torcer, inclinarse",
+        "infinitive":{
+          "verb": "bend",
+          "pronunciation": "bend"
+        },
+        "past":{
+          "verb": "bent",
+          "pronunciation": "bent"
+        },
+        "pastParticiple":{
+          "verb": "bent",
+          "pronunciation": "bent"
+        },
+        "verbIng":{
+          "verb": "bending",
+          "pronunciation": "Sin Datos"
+        }
+      },
+      "pharsalVerb": "Sin Datos",
+      "compoundNoun": "Sin Datos",
+      "gerundVsIng":{
+        "infinitive": "Sin Datos",
+        "gerund": "Sin Datos"
+      },
+      "mode":{
+        "noun": "Sin Datos",
+        "adjetive": "Sin Datos",
+        "adverb": "Sin Datos"
+      }
+    }
   },{
     "id": 11,
-    "word": "Irregular",
-    "test": "go"
+    "word": {
+      "verb": {
+        "verb": "bet",
+        "irregular": true,
+        "regular": false,
+        "british": false,
+        "american": false,
+        "meaning": "apostar",
+        "infinitive":{
+          "verb": "bet",
+          "pronunciation": "bet"
+        },
+        "past":{
+          "verb": "bet",
+          "pronunciation": "bet"
+        },
+        "pastParticiple":{
+          "verb": "bet",
+          "pronunciation": "bet"
+        },
+        "verbIng":{
+          "verb": "betting",
+          "pronunciation": "Sin Datos"
+        }
+      },
+      "pharsalVerb": "Sin Datos",
+      "compoundNoun": "Sin Datos",
+      "gerundVsIng":{
+        "infinitive": "Sin Datos",
+        "gerund": "Sin Datos"
+      },
+      "mode":{
+        "noun": "Sí",
+        "adjetive": "Sin Datos",
+        "adverb": "Sin Datos"
+      }
+    }
   },{
     "id": 12,
-    "word": "Regular",
-    "test": "fall"
+    "word": {
+      "verb": {
+        "verb": "bid",
+        "irregular": true,
+        "regular": false,
+        "british": false,
+        "american": false,
+        "meaning": "ofrecer, pujar, licitar",
+        "infinitive":{
+          "verb": "bid",
+          "pronunciation": "bid"
+        },
+        "past":{
+          "verb": "bid",
+          "pronunciation": "bid"
+        },
+        "pastParticiple":{
+          "verb": "bid",
+          "pronunciation": "bid"
+        },
+        "verbIng":{
+          "verb": "bidding",
+          "pronunciation": "Sin Datos"
+        }
+      },
+      "pharsalVerb": "Sin Datos",
+      "compoundNoun": "Sin Datos",
+      "gerundVsIng":{
+        "infinitive": "Sin Datos",
+        "gerund": "Sin Datos"
+      },
+      "mode":{
+        "noun": "Sí",
+        "adjetive": "Sin Datos",
+        "adverb": "Sin Datos"
+      }
+    }
   },{
     "id": 13,
-    "word": "Irregular",
-    "test": "fly"
+    "word": {
+      "verb": {
+        "verb": "bind",
+        "irregular": true,
+        "regular": false,
+        "british": false,
+        "american": false,
+        "meaning": "atar, unir, encuadernar",
+        "infinitive":{
+          "verb": "bind",
+          "pronunciation": "báind"
+        },
+        "past":{
+          "verb": "bound",
+          "pronunciation": "báund"
+        },
+        "pastParticiple":{
+          "verb": "bound",
+          "pronunciation": "báund"
+        },
+        "verbIng":{
+          "verb": "binding",
+          "pronunciation": "Sin Datos"
+        }
+      },
+      "pharsalVerb": "Sin Datos",
+      "compoundNoun": "Sin Datos",
+      "gerundVsIng":{
+        "infinitive": "Sin Datos",
+        "gerund": "Sin Datos"
+      },
+      "mode":{
+        "noun": "Sí",
+        "adjetive": "Sin Datos",
+        "adverb": "Sin Datos"
+      }
+    }
   },{
     "id": 14,
-    "word": "Regular",
-    "test": "flee"
+    "word": {
+      "verb": {
+        "verb": "bite",
+        "irregular": true,
+        "regular": false,
+        "british": false,
+        "american": false,
+        "meaning": "morder, picar",
+        "infinitive":{
+          "verb": "bite",
+          "pronunciation": "báit"
+        },
+        "past":{
+          "verb": "bit",
+          "pronunciation": "bit"
+        },
+        "pastParticiple":{
+          "verb": "bitten",
+          "pronunciation": "bíten"
+        },
+        "verbIng":{
+          "verb": "biting",
+          "pronunciation": "Sin Datos"
+        }
+      },
+      "pharsalVerb": "Sin Datos",
+      "compoundNoun": "Sin Datos",
+      "gerundVsIng":{
+        "infinitive": "Sin Datos",
+        "gerund": "Sin Datos"
+      },
+      "mode":{
+        "noun": "Sí",
+        "adjetive": "Sin Datos",
+        "adverb": "Sin Datos"
+      }
+    }
   },{
     "id": 15,
-    "word": "Irregular",
-    "test": "go"
+    "word": {
+      "verb": {
+        "verb": "bleed",
+        "irregular": true,
+        "regular": false,
+        "british": false,
+        "american": false,
+        "meaning": "sangrar",
+        "infinitive":{
+          "verb": "bleed",
+          "pronunciation": "blid"
+        },
+        "past":{
+          "verb": "bled",
+          "pronunciation": "bled"
+        },
+        "pastParticiple":{
+          "verb": "bled",
+          "pronunciation": "bled"
+        },
+        "verbIng":{
+          "verb": "bleeding",
+          "pronunciation": "Sin Datos"
+        }
+      },
+      "pharsalVerb": "Sin Datos",
+      "compoundNoun": "Sin Datos",
+      "gerundVsIng":{
+        "infinitive": "Sin Datos",
+        "gerund": "Sin Datos"
+      },
+      "mode":{
+        "noun": "Sin Datos",
+        "adjetive": "Sin Datos",
+        "adverb": "Sin Datos"
+      }
+    }
+  },{
+    "id": 16,
+    "word": {
+      "verb": {
+        "verb": "blow",
+        "irregular": true,
+        "regular": false,
+        "british": false,
+        "american": false,
+        "meaning": "soplar",
+        "infinitive":{
+          "verb": "blow",
+          "pronunciation": "blóu"
+        },
+        "past":{
+          "verb": "blew",
+          "pronunciation": "blú"
+        },
+        "pastParticiple":{
+          "verb": "blown",
+          "pronunciation": "blown"
+        },
+        "verbIng":{
+          "verb": "blowing",
+          "pronunciation": "Sin Datos"
+        }
+      },
+      "pharsalVerb": "Sin Datos",
+      "compoundNoun": "Sin Datos",
+      "gerundVsIng":{
+        "infinitive": "Sin Datos",
+        "gerund": "Sin Datos"
+      },
+      "mode":{
+        "noun": "Sí",
+        "adjetive": "Sin Datos",
+        "adverb": "Sin Datos"
+      }
+    }
   }
 ]

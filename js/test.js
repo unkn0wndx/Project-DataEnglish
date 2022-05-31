@@ -54,24 +54,24 @@ const listCards = async () => {
     cardsList.innerHTML = tableBody;
 };
 
-var TableTest = '<table id="verbsTable" class="table table-bordered table-hover"> <thead class="table-dark"> <tr> <th>Name</th>  </tr> </thead> <tbody id="contenido"> </tbody> </table>';
+const tableLib = '<table id="verbsTable" class="table table-bordered table-hover"> <thead class="table-dark"> <tr> <th>Name</th>  </tr> </thead> <tbody id="tableVerbsC"> </tbody> </table>';
 
 const listVerbsAll = async () => {
 
     const response = await fetch("./json/words.json");
     const data = await response.json();
 
-    prueba.innerHTML = TableTest;
+    tableLibC.innerHTML = tableLib; //tableLibC es el id del div al cual se le colocara la tabla
 
-    let tableBody = ``;
-    data.forEach((word) => {
-        tableBody +=
+    let tableC = ``;
+    data.forEach((dataC) => {
+        tableC +=
             `<tr>
-                <td class="hoverTransition" onclick="testT(test = ${word.id})">${word.test}
+                <td class="hoverTransition" onclick="testT(test = ${dataC.id})">${dataC.word.verb.verb}
                 </td>  
             </tr>`;
     });
-    contenido.innerHTML = tableBody;
+    tableVerbsC.innerHTML = tableC;
 
     table();
 };
@@ -84,19 +84,19 @@ const listVerbsRe = async () => {
     const response = await fetch("./json/words.json");
     const data = await response.json();
 
-    prueba.innerHTML = TableTest;
+    tableLibC.innerHTML = tableLib; //tableLibC es el id del div al cual se le colocara la tabla
 
-    let tableBody = ``;
-    data.forEach((word) => {
-        if (word.word === "Regular") {
-            tableBody +=
+    let tableC = ``;
+    data.forEach((dataC) => {
+        if (dataC.word.verb.regular === true) {
+            tableC +=
                 `<tr>
-                <td class="hoverTransition" onclick="testT(test = ${word.id})">${word.test}
+                <td class="hoverTransition" onclick="testT(test = ${dataC.id})">${dataC.word.verb.verb}
                 </td>  
             </tr>`;
         }
     });
-    contenido.innerHTML = tableBody;
+    tableVerbsC.innerHTML = tableC;
 
     table();
 
@@ -107,19 +107,19 @@ const listVerbsIrre = async () => {
     const response = await fetch("./json/words.json");
     const data = await response.json();
 
-    prueba.innerHTML = TableTest;
+    tableLibC.innerHTML = tableLib; //tableLibC es el id del div al cual se le colocara la tabla
 
-    let tableBody = ``;
-    data.forEach((word) => {
-        if (word.word === "Irregular") {
-            tableBody +=
+    let tableC = ``;
+    data.forEach((dataC) => {
+        if (dataC.word.verb.irregular === true) {
+            tableC +=
                 `<tr>
-                <td class="hoverTransition" onclick="testT(test = ${word.id})">${word.test}
+                <td class="hoverTransition" onclick="testT(test = ${dataC.id})">${dataC.word.verb.verb}
                 </td>  
             </tr>`;
         }
     });
-    contenido.innerHTML = tableBody;
+    tableVerbsC.innerHTML = tableC;
 
     table();
 };
@@ -136,40 +136,72 @@ const testT = async (test) => {
     const response = await fetch("./json/words.json");
     const data = await response.json();
 
-    let tableBody = ``;
-    let seUsaEn = '';
-    let InfinitiveC = ``; 
+    let infinitiveC = ``; 
     let pastC = ``;
     let pastParticipleC = ``;
     let verbIngC = ``;
-    data.forEach((word) => {
+    let meaningC = ``;
 
-        if (test === word.id) {
-            tableBody +=
-                `<tr><td>${word.test}</td><td>${word.test}</td></tr>`;
-            InfinitiveC +=
-                `<li class="list-group-item fw-bold">Verbo: <span class="fw-lighter">${word.test}</span></li>
-                <li class="list-group-item fw-bold">Pronunciación: <span class="fw-lighter">${word.id}</span></li>
-                <li class="list-group-item fw-bold">Significado: <span class="fw-lighter">${word.test}</span></li>`;
+    let tagsC = ``;
+
+    let extraOneC = ``;
+    let extraTwoC = ``;
+    let extraThreeC = ``;
+    data.forEach((dataC) => {
+
+        if (test === dataC.id) {  
+
+            if(dataC.word.verb.irregular == true){
+                tagsC +=  `<span class="badge text-bg-secondary">Irregular</span>`;
+            }else{
+                tagsC +=  `<span class="badge text-bg-secondary">Regular</span>`;
+            }
+            if(dataC.word.verb.british == true){
+                tagsC +=  `&nbsp<span class="badge text-bg-secondary">British verb</span>`;
+            }else if(dataC.word.verb.american == true){
+                tagsC +=  `&nbsp<span class="badge text-bg-secondary">American verb</span>`;
+            }else{
+                tagsC +=  `&nbsp<span class="badge text-bg-secondary">British/American verb</span>`;
+            }
+
+            meaningC += `<li class="list-group-item fw-bold">Verbo: <span class="fw-lighter">${dataC.word.verb.meaning}</span></li>`;
+
+            infinitiveC +=
+                `<li class="list-group-item fw-bold">Verbo: <span class="fw-lighter">${dataC.word.verb.infinitive.verb}</span></li>
+                <li class="list-group-item fw-bold">Pronunciación: <span class="fw-lighter">${dataC.word.verb.infinitive.pronunciation}</span></li>`;
+
             pastC +=
-                `<li class="list-group-item fw-bold">Verbo: <span class="fw-lighter">${word.test}</span></li>
-                <li class="list-group-item fw-bold">Pronunciación: <span class="fw-lighter">${word.id}</span></li>
-                <li class="list-group-item fw-bold">Significado: <span class="fw-lighter">${word.test}</span></li>`;
+                `<li class="list-group-item fw-bold">Verbo: <span class="fw-lighter">${dataC.word.verb.past.verb}</span></li>
+                <li class="list-group-item fw-bold">Pronunciación: <span class="fw-lighter">${dataC.word.verb.past.pronunciation}</span></li>`;
+
             pastParticipleC +=
-                `<li class="list-group-item fw-bold">Verbo: <span class="fw-lighter">${word.test}</span></li>
-                <li class="list-group-item fw-bold">Pronunciación: <span class="fw-lighter">${word.id}</span></li>
-                <li class="list-group-item fw-bold">Significado: <span class="fw-lighter">${word.test}</span></li>`;
+                `<li class="list-group-item fw-bold">Verbo: <span class="fw-lighter">${dataC.word.verb.pastParticiple.verb}</span></li>
+                <li class="list-group-item fw-bold">Pronunciación: <span class="fw-lighter">${dataC.word.verb.pastParticiple.pronunciation}</span></li>`;
+                
             verbIngC +=
-                `<li class="list-group-item fw-bold">Verbo: <span class="fw-lighter">${word.test}</span></li>
-                <li class="list-group-item fw-bold">Pronunciación: <span class="fw-lighter">${word.id}</span></li>
-                <li class="list-group-item fw-bold">Significado: <span class="fw-lighter">${word.test}</span></li>`;
-            seUsaEn += `${word.test2}`; 
+            `<li class="list-group-item fw-bold">Verbo: <span class="fw-lighter">${dataC.word.verb.verbIng.verb}</span></li>
+            <li class="list-group-item fw-bold">Pronunciación: <span class="fw-lighter">${dataC.word.verb.verbIng.pronunciation}</span></li>`;
+
+            extraOneC += `<li class="list-group-item fw-bold">Pharsal Verb: <span class="fw-lighter">${dataC.word.pharsalVerb}</span></li><li class="list-group-item fw-bold">Compound Noun: <span class="fw-lighter">${dataC.word.compoundNoun}</span></li>`;
+
+            extraTwoC +=`<li class="list-group-item fw-bold">Infinitivo: <span class="fw-lighter">${dataC.word.gerundVsIng.infinitive}</span></li>
+            <li class="list-group-item fw-bold">Verb + ing: <span class="fw-lighter">${dataC.word.gerundVsIng.gerund}</span></li>`; 
+
+            extraThreeC +=` <li class="list-group-item fw-bold">Sustantivo: <span class="fw-lighter">${dataC.word.mode.noun}</span></li>
+            <li class="list-group-item fw-bold">Adjetivo: <span class="fw-lighter">${dataC.word.mode.adjetive}</span></li>
+            <li class="list-group-item fw-bold">Adverbio: <span class="fw-lighter">${dataC.word.mode.adverb}</span></li>`;
+
         }
     });
-    verbInfinitive.innerHTML = InfinitiveC;
-    testIcon.innerHTML = seUsaEn;
-    verbPast.innerHTML = pastC;
-    verbPastParticiple.innerHTML = pastParticipleC;
-    verbIng.innerHTML = verbIngC;
-    testContenido.innerHTML = tableBody;
+    meaning.innerHTML = meaningC; //Significado del verbo
+    verbInfinitive.innerHTML = infinitiveC; //Verbo en Infinitive
+    verbPast.innerHTML = pastC; //Verbo en Past
+    verbPastParticiple.innerHTML = pastParticipleC; //Verbo en Past Participle
+    verbIng.innerHTML = verbIngC; //Verbo en ing
+
+    tags.innerHTML = tagsC;
+
+    extraOne.innerHTML = extraOneC; //
+    extraTwo.innerHTML = extraTwoC; //
+    extraThree.innerHTML = extraThreeC; //
 }
